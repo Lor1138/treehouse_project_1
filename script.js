@@ -68,5 +68,4 @@ function getRandomQuote(){
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
 
-document.getElementById('load-quote').addEventListener("click", printQuote, false); document.getElementById('quote-box').innerHTML = printQuote(getRandomQuote()); 
-
+document.getElementById('load-quote').addEventListener("click", printQuote, false); 
