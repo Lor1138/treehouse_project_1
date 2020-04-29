@@ -3,9 +3,6 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-// For assistance: 
-  // Check the "Project Resources" section of the project instructions
-  // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
 
 //An array with objects containing quotes and their sources
 
@@ -32,12 +29,8 @@ function getRandomQuote(){
 
 
 
-
-
-
-
 /***
- * `printQuote` function
+ * `printQuote` function to check if a quote has a citation or year value and then print it to the page in an HTML string
 ***/
 
  function printQuote(){
