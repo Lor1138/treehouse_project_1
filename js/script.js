@@ -40,18 +40,19 @@ function getRandomQuote(){
    let html = stringQuote + stringSource;
      if(buildQuote.citation === "Horton Hears A Who"){
           html +=  `'<span class="citation">${buildQuote.citation}</span>'`;
-     } else if(buildQuote.year === '551 BC - 479 BC'){
+     } if(buildQuote.year === '551 BC - 479 BC'){
           html += `'<span class="year">${buildQuote.year}</span>'`;
-     } else {
-          html += `</p>`;
-  }
-   return html;
+     } 
+      html += `</p>`;
+      return document.getElementById('quote-box').innerHTML = html;
+
  }
 
+
+
  
+
  
- 
- document.getElementById('quote-box').innerHTML = printQuote(getRandomQuote()); 
 
 
 
@@ -60,5 +61,12 @@ function getRandomQuote(){
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
+  document.getElementById('load-quote').addEventListener("click", printQuote, false);
 
-document.getElementById('load-quote').addEventListener("click", printQuote, false); 
+
+
+
+
+
+
+
